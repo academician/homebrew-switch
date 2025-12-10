@@ -48,7 +48,7 @@ jobs:
 
       - name: update clone.json
         run: |
-          curl https://gist.githubusercontent.com/danielfoehrKn/c1b5f4d42f7a36466915c990cf17b73e/raw/c4304622329fd47b573682caa9143fdb2939cf0d/github_clone_count_badge_main.py > main.py
+          curl https://gist.githubusercontent.com/academician/6824af9c3d0ea576e85457824afcb13d/raw/c4304622329fd47b573682caa9143fdb2939cf0d/github_clone_count_badge_main.py > main.py
           python3 main.py
 
       - name: Update gist with latest count
