@@ -1,23 +1,23 @@
 class Switcher < Formula
   desc "Providing the binary executable for the 'switch' script."
   homepage "https://github.com/academician/kubeswitch"
-  version "0.9.3"
+  version "v0.9.4-academician.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/academician/kubeswitch/releases/download/0.9.3/switcher_darwin_arm64"
-      sha256 "46b13af9cb317f5b24ef4fb48ff15781836e25f4168325879abb60bccb993e4f"
+      url "https://github.com/academician/kubeswitch/releases/download/v0.9.4-academician.0/switcher_darwin_arm64"
+      sha256 "sha256:d59ffca7501da3add687b9cf7c734b0847aec8687ad63b79ee629401e88da794"
     else
-      url "https://github.com/academician/kubeswitch/releases/download/0.9.3/switcher_darwin_amd64"
-      sha256 "c6c0bb367922bb17af1165d2b97052696f48ca267d449fd2394e04fbcf1666a6"
+      url "https://github.com/academician/kubeswitch/releases/download/v0.9.4-academician.0/switcher_darwin_amd64"
+      sha256 "sha256:5e6dbe81c19afd56e48049217f5c7c0342d0c00a4172d8cd87392f167532bf81"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/academician/kubeswitch/releases/download/0.9.3/switcher_linux_arm64"
-      sha256 "7597a5f9f755100969e10ec2f6142dcd9b1ec4012adc227a3aa90ea04964974d"
+      url "https://github.com/academician/kubeswitch/releases/download/v0.9.4-academician.0/switcher_linux_arm64"
+      sha256 "sha256:52d3b63e441678ea297c2c5fe0ce04cc313bf777ef9712ed9bacd0edba886cb4"
     else
-      url "https://github.com/academician/kubeswitch/releases/download/0.9.3/switcher_linux_amd64"
-      sha256 "8554ac5b8767ec337025e01d468bcf9e90be56a0b23891bbb47ecfe4191fa56f"
+      url "https://github.com/academician/kubeswitch/releases/download/v0.9.4-academician.0/switcher_linux_amd64"
+      sha256 "sha256:c7d0a0ff52f9fb81e669ab2c5f56f3071c59ba4d5a0f488e4452bc0785a078ff"
     end
   end
 
